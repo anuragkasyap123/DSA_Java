@@ -1,2 +1,5 @@
 # Java compiled bytecode
 *.class
+
+# Local and CI compilation output
+build/
