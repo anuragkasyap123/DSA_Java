@@ -2,7 +2,8 @@
 setlocal
 
 if not exist build\classes mkdir build\classes
-javac -d build\classes Arrays\*.java
+dir /s /b *.java > build\sources.txt
+javac -d build\classes @build\sources.txt
 
 if errorlevel 1 (
     echo Build failed.
